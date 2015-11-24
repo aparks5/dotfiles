@@ -1,0 +1,2 @@
+# dotfiles
+emacs, xmonad, xorg
