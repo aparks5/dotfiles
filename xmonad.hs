@@ -3,6 +3,7 @@ import XMonad
 main = do
    xmonad $ defaultConfig
      {
+	modMask = mod4Mask,
 	borderWidth = myBorderWidth,
 	focusedBorderColor = myFocusedBorderColor
      }
