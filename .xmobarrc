@@ -8,11 +8,11 @@ Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
        , persistent = True
        , border = NoBorder
        , borderColor = "black"
-       , position = TopW L 90
-       , commands = [ 
+       , position = BottomW R 7
+       , commands = [
                      Run Date "%a %b %_d %l:%M" "date" 10
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%date%"
+       , template = " %date%"
        }
