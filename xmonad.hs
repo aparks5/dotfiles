@@ -8,5 +8,5 @@ main = do
 	focusedBorderColor = myFocusedBorderColor
      }
 
-myBorderWidth = 1
-myFocusedBorderColor = "#000000"
+myBorderWidth = 3
+myFocusedBorderColor = "#66ff66"
