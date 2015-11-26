@@ -1,3 +1,4 @@
-sudo -u ${USERNAME} cp .xsession ~/
-sudo -u ${USERNAME} cp xmonad.hs ~/.xmonad/
-sudo -u ${USERNAME} cp .emacs ~/
+cp .xsession ~/
+cp xmonad.hs ~/.xmonad/
+cp .xmobarrc ~/
+cp .emacs ~/
