@@ -1,6 +1,7 @@
 import XMonad
 import Data.Monoid
 import System.Exit
+import XMonad.Hooks.SetWMName
 
 -- spawn xmobar
 import XMonad.Hooks.ManageDocks
@@ -11,16 +12,17 @@ import qualified Data.Map        as M
 
 -- change vertical size
 import XMonad.Layout.ResizableTile
-import XMonad.Util.EZConfig -- or use another method of binding resizable keys
+import XMonad.Util.EZConfig -- or use another me$
 
 main = do
    xmproc <- spawnPipe myBar
    xmonad $ defaultConfig
      {
-	modMask = mod4Mask,
-	borderWidth = myBorderWidth,
-	focusedBorderColor = myFocusedBorderColor,
-        manageHook = manageDocks <+> manageHook defaultConfig,
+        startupHook = setWMName "LG3D",
+        modMask = mod4Mask,
+        borderWidth = myBorderWidth,
+        focusedBorderColor = myFocusedBorderColo$
+        manageHook = manageDocks <+> manageHook $
         layoutHook = myLayout
       } `additionalKeysP` myKeys
 
@@ -32,13 +34,10 @@ myKeys =  -- resize both axes in resizableTall
     , ("M-n", sendMessage $ MirrorShrink)
     , ("M-v", sendMessage $ Shrink)
     , ("M-b", sendMessage $ Expand)
+    , ("M-l", spawn "xscreensaver-command -lock")
+    , ("M-s", spawn "scrot -d 2")
     ]
- 
-myBar = "/usr/bin/xmobar /home/anthony/.xmobarrc"
+
+myBar = "/usr/bin/xmobar /home/sonosdeveloper/.x$
 myBorderWidth = 3
 myFocusedBorderColor = "#669999"
-
-
-
-
-
