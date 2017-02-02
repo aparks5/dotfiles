@@ -76,14 +76,14 @@
 
 (global-set-key [C-tab] 'company-etags)
 
-;; sonos-log-mode
+;; my-log-mode
 (setq my-highlights
       '(("INFO" . font-lock-keyword-face)
 	("WARNING" . font-lock-function-name-face)
 	("DEBUG\\|PASS" . font-lock-builtin-face)
 	("STOP\\|ERROR\\|FAIL\\|CRITICAL" . font-lock-warning-face)))
 
-(define-derived-mode sonos-log-mode fundamental-mode
+(define-derived-mode my-log-mode fundamental-mode
   (setq font-lock-defaults '(my-highlights))
   (setq mode-name "My Special Log"))
 
