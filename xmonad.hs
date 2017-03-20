@@ -41,7 +41,11 @@ main = do
 	borderWidth = myBorderWidth,
 	focusedBorderColor = myFocusedBorderColor,
         manageHook = manageDocks <+> manageHook defaultConfig,
-        layoutHook = myLayout
+        layoutHook = myLayout,
+        handleEventHook = mconcat
+                          [ docksEventHook
+                          , handleEventHook defaultConfig ]
+
       } `additionalKeysP` myKeys
 
 myLayout = avoidStruts ( ResizableTall 1 (2/100) (1/2) [] )
