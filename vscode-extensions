@@ -1,0 +1,17 @@
+extensions i use:
+
+font: fira-code -> https://github.com/tonsky/FiraCode
+theme: dracula
+icons: vscode great icons
+
+dev: c/c++, python, haskell
+
+test: googletest adapter
+
+linter: clang-format
+
+log files: output colorizer
+
+usability: code spell checker diff tool, local history
+
+productivity: vscode-pomodoro
