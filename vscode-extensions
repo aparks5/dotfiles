@@ -8,5 +8,5 @@ dev: c/c++, python, haskell
 test: googletest adapter
 linter: clang-format
 log files: output colorizer
-usability: code spell checker diff tool, local history
+usability: code spell checker diff tool, local history, favorites
 productivity: vscode-pomodoro
